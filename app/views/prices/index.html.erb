@@ -1,0 +1,109 @@
+<% provide :title, 'Planos' %>
+
+<section id="plans" class="jumbotron">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12">
+				<ul class="list-unstyled text-center">
+					<li><h2 class='bold'>Inicie sua avalização gratuita de 14 dias Hoje</h2></li>
+					<li><p>Você está a segundos de usar o startupculture, a ferramenta
+					de gestãode midia social mais fácil e acessivel do mercado. comece
+					o seu teste para conhecer.</p></li>
+					<ul class="list-unstyled list-inline text-center">
+						<li><%= link_to 'Mensal', '#monthly', class: 'btn btn-primary btn-lg top' %></li>
+						<li><%= link_to 'Anual', '#anual', class: 'btn btn-primary btn-lg top' %></li>
+					</ul>
+				</ul>
+			</div>
+		</div>
+	</div>
+</section>
+
+<section id="plan">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12">
+					<% for i in 1..4 %>
+						<div class="col-md-3">
+							<div class="panel panel-default">
+								<ul class="list-unstyled padding">
+									<li><small>Small</small></li>
+									<li><p>Melhor para freelancer</p></li>
+									<li><h3 class='bold'>$39/mo</h3></li>
+									<li><%= button_to 'Iniciar Teste', '', class: 'bt btn-primary btn-lg top' %></li>
+								</ul>
+							</div>
+						</div>
+					<% end %>
+			</div>
+		</div>
+	</div>
+</section>
+
+<section id="testimonials">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12">
+				<ul class="list-unstyled text-center">
+					<li><h3 class='bold'>Não tome nossa palavra.</h3></li>
+					<li><hr></li>
+				</ul>
+
+				<% for i in 1..3 %>
+					<div class="col-md-4">
+						<div class="media">
+							<div class="media-left">
+									<%= image_tag('', class: 'media-object') %>
+							</div>
+							<div class="media-body">
+								<h4 class="media-heading"><%= link_to 'John Doe', '', class: 'bold' %></h4>
+								<blockquote>Lorem ipsum lorem dolor siamet ihrm
+								alet dolor siamet irhem doloret.</blockquote>
+							</div>
+						</div>
+					</div>
+				<% end %>
+			</div>
+		</div>
+	</div>
+</section>
+
+
+<section id="question">
+	<div class="container">
+		<div class="col-md-12">
+			<ul class="list-unstyled text-center">
+				<li><h3 class="bold">Perguntas Frequentes</h3></li>
+				<li><hr></li>
+			</ul>
+			
+			<div class="row">
+				<% for i in 1..6 %>
+					<div class="col-md-12">
+						<div class="panel panel-default">
+							<ul class="list-unstyled padding">
+								<li><i class='glyphicon glyphicon-search pull-right'></i></li>
+								<li><h4>Como funciona o teste de 14 dias?</h4></li>
+							</ul>
+						</div>
+					</div>
+				<% end %>
+			</div>
+		</div>
+	</div>
+</section>
+
+
+<section id="brand" class="jumbotron">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12">
+				<ul class="list-unstyled text-center">
+					<li><h3 class='bold'>" Começamos a procurar uma plataforma de midia social.</h3></li>
+					<li><h3 class='bold'>Mas sempre faltava alguma coisa... "</h3></li>
+					<li><i class='glyphicon glyphicon-search'></i></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</section>
