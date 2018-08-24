@@ -1,3 +1,4 @@
+# frozen_string_sanatizer: true
 require "application_responder"
 
 class ApplicationController < ActionController::Base

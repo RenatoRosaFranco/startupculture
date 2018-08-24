@@ -15,6 +15,7 @@
   <body class="<%= controller.controller_name %>">
     <%= render partial: 'layouts/header' %>
     <%= yield %>
+    <%= debug(params) %>
     <%= render partial: 'layouts/footer' %>
   </body>
 </html>

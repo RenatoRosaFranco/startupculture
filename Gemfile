@@ -48,6 +48,7 @@ group :development, :test do
   gem 'rubocop'
   gem 'simplecov'
   gem 'rspec-rails'
+  gem 'mailcatcher'
 end
 
 group :development do

@@ -6,12 +6,14 @@ module NewsletterInterfaceable
 		set_token
 		set_status(:enabled)
 		set_signin_date
+		mail(NewsletterMailer, :signin, self, :deliver_now)
 		save
 	end
 
 	def cancel
 		remove_token
 		set_status(:disabled)
+		mail(NewsletterMailer, :cancel, self, :deliver_now)
 		save
 	end
 

@@ -1,13 +1,13 @@
 # frozen_string_sanatizer: true
 class Newsletter < ApplicationRecord
-	include NewsletterInterfaceable
+	include MailerInterfaceable, NewsletterInterfaceable
 
 	self.table_name = 'newsletters'
 	self.primary_key = 'id'
 
 	enum status: [:enabled, :disabled]
 	after_create :signin
-	
+
 	validates :name,
 						presence: true,
 						uniqueness: false,
